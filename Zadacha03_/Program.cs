@@ -8,15 +8,14 @@ string IsPalindrome(string str)
         int convEnd = Convert.ToInt32(str[str.Length-i-1]);
         if(convStart != convEnd)
         {
-            return("String is not palindrome");
+            return("Нет");
         }
     }
-    return("String is palindrome");
+    return("Да");
 }
 
 Console.WriteLine();
 Console.Write("Введите строку: ");
 string str = Console.ReadLine()!;
-Console.WriteLine(str);
 Console.WriteLine(IsPalindrome(str));
 Console.WriteLine();
