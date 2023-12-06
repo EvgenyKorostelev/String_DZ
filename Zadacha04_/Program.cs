@@ -39,17 +39,7 @@ char[,] CrateArray(string str)
    return chars;
 }
 
-void Show2dArray(char [,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write(array[i, j] + " ");
-        }
-        Console.WriteLine();
-    }
-}
+
 
 void Changeling(char [,] array)
 {
@@ -76,7 +66,6 @@ Console.WriteLine();
 Console.Write("Введите строку: ");
 string str = Console.ReadLine()!;
 char [,] arr = CrateArray(str);
-//Show2dArray(arr);
 Console.Write("Перевернутая строка: ");
 Changeling(arr);
 Console.WriteLine();
